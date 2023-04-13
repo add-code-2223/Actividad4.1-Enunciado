@@ -71,9 +71,9 @@ public class MainEmpleado {
 			
 			}
 
-		} catch (DuplicateInstanceException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			System.err.println("Se ha intentado guardar un empleado que ya existe: " + e.getMessage());
+			System.err.println("Se ha intentado guardar un empleado y se ha dado una exception: " + e.getMessage());
 		}
 
 	}
